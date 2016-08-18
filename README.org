@@ -1,0 +1,17 @@
+#+TITLE: OSDev
+
+* 概述
+
+这是个人学习内核开发的一个记录，主要参考的是 [[http://wiki.osdev.org/Main_Page][OSdev]] 。
+
+系统：Gentoo
+
+编辑器：emacs
+
+* TODO 进度 [1/2]
+
+** DONE [[crossdev.org][GCC Cross Compiler]]
+
+** TODO  [[bare_bones][Bare Bones]]
+
+** TODO ...

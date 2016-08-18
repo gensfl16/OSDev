@@ -1,0 +1,42 @@
+#+TITLE: Crossdev
+
+* 概述
+
+这个对于 Getnoo 真的是非常容易，主要就是弄个 overlay 。
+
+参考这这两个部分，可以很容易知道怎么做：
+
+1) [[https://wiki.gentoo.org/wiki/Overlay/Local_overlaycrossdev][Local Overlay]]
+2) [[http://wiki.osdev.org/GCC_Cross-Compiler][OSdev Crossdev]]
+
+* 具体
+
+** 安装 crossdev
+
+#+BEGIN_SRC sh
+ # emerge -a crossdev
+#+END_SRC
+
+** 创建 overlay
+
+#+BEGIN_SRC sh
+ # mkdir -p /usr/local/portage-crossdev/{profiles,metadata}
+ # echo 'local-crossdev' > /usr/local/portage-crossdev/profiles/repo_name
+ # echo 'masters = getnoo' > /usr/local/portage-crossdev/metadata/layout.conf
+#+END_SRC
+
+编辑文件 */etc/portage/repos.conf/crossdev.conf*
+
+#+BEGIN_SRC
+[local-crossdev]
+location = /usr/local/portage-crossde
+priority = 10
+masters = gentoo
+auto-sync = no
+#+END_SRC
+
+** 安装
+
+#+BEGIN_SRC sh
+ # crossdev -s1 -t i686
+#+END_SRC
