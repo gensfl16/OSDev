@@ -6,7 +6,7 @@
 
 参考这这两个部分，可以很容易知道怎么做：
 
-1) [[https://wiki.gentoo.org/wiki/Overlay/Local_overlaycrossdev][Local Overlay]]
+1) [[https://wiki.gentoo.org/wiki/Overlay/Local_overlay][Local Overlay]]
 2) [[http://wiki.osdev.org/GCC_Cross-Compiler][OSdev Crossdev]]
 
 * 具体
