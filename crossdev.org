@@ -7,7 +7,7 @@
 参考这这两个部分，可以很容易知道怎么做：
 
 1) [[https://wiki.gentoo.org/wiki/Overlay/Local_overlay][Local Overlay]]
-2) [[http://wiki.osdev.org/GCC_Cross-Compiler][OSdev Crossdev]]
+2) [[http://wiki.osdev.org/GCC_Cross-Compiler][OSDev Crossdev]]
 
 * 具体
 
