@@ -34,3 +34,8 @@
 
 # emacs backup files
 *~
+
+# iso
+*.iso
+*.bin
+isodir/

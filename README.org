@@ -1,17 +1,39 @@
-#+TITLE: OSDev
+#+TITLE: Bare Bones
 
 * 概述
 
-这是个人学习内核开发的一个记录，主要参考的是 [[http://wiki.osdev.org/Main_Page][OSdev]] 。
+参考 [[http://wiki.osdev.org/Bare_Bones][OSDev Bare Bones]]
 
 系统：Gentoo
 
 编辑器：emacs
 
-* TODO 进度 [1/2]
+* Crossdev
 
-** DONE [[crossdev.org][GCC Cross Compiler]]
+交叉编译环境，过程 [[crossdev.org][crossdev]] 。
 
-** TODO  [[bare_bones][Bare Bones]]
+* 注意
 
-** TODO ...
+grub-mkrescue 的正确运行需要 +xorriso+ ，在包 libisoburn 中，参考 [[http://wiki.osdev.org/GRUB][OSDev GRUB]]
+
+#+BEGIN_SRC sh
+  # emerge -a libisoburn
+#+END_SRC
+
+* 功能
+
+在原有基础上增加了 Newlines 和 Terminal Scrolling 。
+
+* 编译
+
+#+BEGIN_SRC sh
+  $ make
+  $ make build
+  $ make qemu
+#+END_SRC
+
+* 下一步
+
+这一部分完成后，可以发现代码不多，更多的是用来理清大概流程，以及几个工具的使用。
+
+下一步将根据教程 [[http://wiki.osdev.org/Meaty_Skeleton][OSDev Meaty Skeleton]] 来较为合理组织代码结构，并在这个基础上进行自己的开发。
