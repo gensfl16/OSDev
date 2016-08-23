@@ -12,9 +12,30 @@
 
 交叉编译环境，过程 [[crossdev.org][crossdev]] 。
 
+* 主要文件
+
+#+BEGIN_SRC sh
+tree
+#+END_SRC
+
+#+RESULTS:
+| .   |              |   |       |
+| ├── | boot.s       |   |       |
+| ├── | build.sh     |   |       |
+| ├── | crossdev.org |   |       |
+| ├── | grub.cfg     |   |       |
+| ├── | kernel.c     |   |       |
+| ├── | LICENSE      |   |       |
+| ├── | linker.ld    |   |       |
+| ├── | Makefile     |   |       |
+| └── | README.org   |   |       |
+|     |              |   |       |
+| 0   | directories, | 9 | files |
+
+
 * 注意
 
-grub-mkrescue 的正确运行需要 +xorriso+ ，在包 libisoburn 中，参考 [[http://wiki.osdev.org/GRUB][OSDev GRUB]]
+grub-mkrescue 的正确运行需要 *xorriso* ，在包 libisoburn 中，参考 [[http://wiki.osdev.org/GRUB][OSDev GRUB]]
 
 #+BEGIN_SRC sh
   # emerge -a libisoburn
