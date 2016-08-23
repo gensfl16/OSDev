@@ -14,24 +14,14 @@
 
 * 主要文件
 
-#+BEGIN_SRC sh
-tree
+#+BEGIN_SRC
+.
+├──boot.s
+├──grub.cfg
+├──kernel.c
+└──linker.ld
+
 #+END_SRC
-
-#+RESULTS:
-| .   |              |   |       |
-| ├── | boot.s       |   |       |
-| ├── | build.sh     |   |       |
-| ├── | crossdev.org |   |       |
-| ├── | grub.cfg     |   |       |
-| ├── | kernel.c     |   |       |
-| ├── | LICENSE      |   |       |
-| ├── | linker.ld    |   |       |
-| ├── | Makefile     |   |       |
-| └── | README.org   |   |       |
-|     |              |   |       |
-| 0   | directories, | 9 | files |
-
 
 * 注意
 
